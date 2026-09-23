@@ -1,0 +1,1509 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Akbar Muzaki | Guru TJKT & IT</title>
+
+    <meta name="description"
+        content="Portofolio Akbar Muzaki, Guru Teknik Jaringan Komputer dan Telekomunikasi (TJKT).">
+
+    <style>
+        /* =====================================================
+           RESET
+        ===================================================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7f8fa;
+            color: #1f2937;
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: min(1120px, 92%);
+            margin: auto;
+        }
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255,255,255,.96);
+            border-bottom: 1px solid #e5e7eb;
+            backdrop-filter: blur(8px);
+        }
+
+        .navbar {
+            min-height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 800;
+            color: #111827;
+            letter-spacing: -.5px;
+        }
+
+        .logo span {
+            color: #2563eb;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            font-weight: 600;
+            color: #4b5563;
+            transition: .2s;
+        }
+
+        .nav-links a:hover {
+            color: #2563eb;
+        }
+
+        .menu-btn {
+            display: none;
+            border: 0;
+            background: transparent;
+            font-size: 27px;
+            cursor: pointer;
+        }
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+        .hero {
+            background: #fff;
+            padding: 90px 0 85px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.25fr .75fr;
+            align-items: center;
+            gap: 70px;
+        }
+
+        .small-title {
+            display: inline-block;
+            color: #2563eb;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 6vw, 68px);
+            line-height: 1.05;
+            letter-spacing: -2.5px;
+            color: #111827;
+            margin-bottom: 22px;
+        }
+
+        .hero h1 span {
+            color: #2563eb;
+        }
+
+        .hero-description {
+            max-width: 650px;
+            font-size: 18px;
+            color: #6b7280;
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 19px;
+            border-radius: 7px;
+            font-size: 14px;
+            font-weight: 700;
+            border: 1px solid #d1d5db;
+            transition: .2s;
+        }
+
+        .btn-primary {
+            background: #2563eb;
+            border-color: #2563eb;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background: #1d4ed8;
+        }
+
+        .btn-secondary {
+            background: #fff;
+            color: #374151;
+        }
+
+        .btn-secondary:hover {
+            border-color: #2563eb;
+            color: #2563eb;
+        }
+
+        /* FOTO */
+        .profile-box {
+            display: flex;
+            justify-content: center;
+        }
+
+      .profile-photo {
+    width: 290px;
+    min-height: 350px;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #f3f4f6;
+    border: 8px solid #fff;
+    box-shadow: 0 18px 45px rgba(15,23,42,.12);
+}
+
+.profile-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+        .photo-placeholder {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #e5e7eb;
+            color: #6b7280;
+            text-align: center;
+            padding: 30px;
+            font-size: 14px;
+        }
+
+        /* =====================================================
+           GENERAL SECTION
+        ===================================================== */
+        section {
+            padding: 85px 0;
+        }
+
+        .section-head {
+            max-width: 680px;
+            margin-bottom: 45px;
+        }
+
+        .section-label {
+            color: #2563eb;
+            font-size: 13px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .section-head h2 {
+            font-size: 36px;
+            line-height: 1.2;
+            color: #111827;
+            margin-bottom: 12px;
+            letter-spacing: -.8px;
+        }
+
+        .section-head p {
+            color: #6b7280;
+        }
+
+        /* =====================================================
+           ABOUT
+        ===================================================== */
+        .about {
+            background: #f7f8fa;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 55px;
+        }
+
+        .about-text p {
+            color: #4b5563;
+            margin-bottom: 16px;
+        }
+
+        .info-list {
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .info-item {
+            display: grid;
+            grid-template-columns: 130px 1fr;
+            gap: 15px;
+            padding: 14px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .info-item strong {
+            color: #111827;
+            font-size: 14px;
+        }
+
+        .info-item span {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        /* =====================================================
+           SKILLS
+        ===================================================== */
+        .skills {
+            background: #fff;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .skill-card {
+            padding: 25px;
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 9px;
+            transition: .2s;
+        }
+
+        .skill-card:hover {
+            border-color: #bfdbfe;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(15,23,42,.06);
+        }
+
+        .skill-number {
+            color: #2563eb;
+            font-size: 13px;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+        .skill-card h3 {
+            color: #111827;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+
+        .skill-card p {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        /* =====================================================
+           EXPERIENCE
+        ===================================================== */
+        .experience {
+            background: #f7f8fa;
+        }
+
+        .timeline {
+            border-left: 2px solid #dbeafe;
+            padding-left: 32px;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 38px;
+        }
+
+        .timeline-item:last-child {
+            padding-bottom: 0;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #2563eb;
+            left: -38px;
+            top: 8px;
+        }
+
+        .timeline-date {
+            color: #2563eb;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .timeline-item h3 {
+            color: #111827;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .timeline-item h4 {
+            color: #6b7280;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .timeline-item p {
+            color: #6b7280;
+            max-width: 760px;
+        }
+
+        /* =====================================================
+           PROJECT
+        ===================================================== */
+        .projects {
+            background: #fff;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+        }
+
+        .project-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        .project-top {
+            height: 8px;
+            background: #2563eb;
+        }
+
+        .project-content {
+            padding: 27px;
+        }
+
+        .project-content h3 {
+            font-size: 21px;
+            color: #111827;
+            margin-bottom: 10px;
+        }
+
+        .project-content p {
+            color: #6b7280;
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+        }
+
+        .tag {
+            padding: 5px 9px;
+            border-radius: 5px;
+            background: #eff6ff;
+            color: #1d4ed8;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        /* =====================================================
+           EDUCATION / VALUES
+        ===================================================== */
+        .values {
+            background: #f7f8fa;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .value {
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            padding: 25px;
+            border-radius: 9px;
+        }
+
+        .value h3 {
+            color: #111827;
+            margin-bottom: 8px;
+        }
+
+        .value p {
+            font-size: 14px;
+            color: #6b7280;
+        }
+
+        /* =====================================================
+           CONTACT
+        ===================================================== */
+        .contact {
+            background: #111827;
+            color: #fff;
+        }
+
+        .contact .section-label {
+            color: #93c5fd;
+        }
+
+        .contact .section-head h2 {
+            color: #fff;
+        }
+
+        .contact .section-head p {
+            color: #9ca3af;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .contact-list {
+            display: grid;
+            gap: 15px;
+        }
+
+        .contact-item {
+            padding: 17px;
+            border: 1px solid #374151;
+            border-radius: 8px;
+        }
+
+        .contact-item small {
+            display: block;
+            color: #9ca3af;
+            font-size: 12px;
+            margin-bottom: 4px;
+        }
+
+        .contact-item a {
+            color: #fff;
+            font-weight: 600;
+            word-break: break-word;
+        }
+
+        .contact-item a:hover {
+            color: #93c5fd;
+        }
+
+        .contact-note {
+            color: #9ca3af;
+            font-size: 14px;
+        }
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+        footer {
+            background: #0b1120;
+            color: #9ca3af;
+            padding: 25px 0;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        /* =====================================================
+           ANIMATION
+        ===================================================== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity .6s ease, transform .6s ease;
+        }
+
+        .reveal.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+        @media (max-width: 850px) {
+
+            .menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 72px;
+                left: 0;
+                right: 0;
+                background: #fff;
+                border-bottom: 1px solid #e5e7eb;
+                padding: 18px 5%;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hero-grid,
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-box {
+                order: -1;
+            }
+
+            .skills-grid,
+            .values-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 560px) {
+
+            .hero {
+                padding: 60px 0;
+            }
+
+            section {
+                padding: 65px 0;
+            }
+
+            .hero h1 {
+                font-size: 43px;
+                letter-spacing: -1.5px;
+            }
+
+            .hero-description {
+                font-size: 16px;
+            }
+
+            .profile-photo {
+                width: 240px;
+                height: 290px;
+            }
+
+            .skills-grid,
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-head h2 {
+                font-size: 30px;
+            }
+
+            .info-item {
+                grid-template-columns: 100px 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+<header>
+    <div class="container navbar">
+
+        <a href="#home" class="logo">
+            Akbar<span>.</span>
+        </a>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#experience">Pengalaman</a></li>
+            <li><a href="#projects">Proyek</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+
+    </div>
+</header>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<main>
+
+<section class="hero" id="home">
+
+    <div class="container hero-grid">
+
+        <div class="hero-text reveal">
+
+            <span class="small-title">
+                GURU TJKT • IT • NETWORKING
+            </span>
+
+            <h1>
+                Halo, saya<br>
+                <span>Akbar Muzaki.</span>
+            </h1>
+
+            <p class="hero-description">
+                Guru Teknik Jaringan Komputer dan Telekomunikasi
+                yang memiliki ketertarikan pada jaringan komputer,
+                pengembangan web, sistem komputer, dan pendidikan
+                berbasis teknologi.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn btn-primary">
+                    Lihat Proyek
+                </a>
+
+                <a href="#contact" class="btn btn-secondary">
+                    Hubungi Saya
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="profile-box reveal">
+
+            <div class="profile-photo">
+
+              
+                <img src="akbar.jpg" alt="Akbar Muzaki">
+                
+                
+
+                <div class="photo-placeholder">
+                    Masukkan foto Anda di sini
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+<section class="about" id="about">
+
+    <div class="container">
+
+        <div class="section-head reveal">
+
+            <div class="section-label">
+                Tentang Saya
+            </div>
+
+            <h2>
+                Teknologi, jaringan, dan pendidikan.
+            </h2>
+
+            <p>
+                Saya tertarik menggabungkan kemampuan teknis
+                dengan proses pembelajaran yang praktis.
+            </p>
+
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-text reveal">
+
+                <p>
+                    Saya adalah guru pada bidang Teknik Jaringan
+                    Komputer dan Telekomunikasi (TJKT). Dalam
+                    pembelajaran, saya berusaha membuat materi
+                    teknologi lebih mudah dipahami melalui praktik
+                    dan proyek nyata.
+                </p>
+
+                <p>
+                    Selain jaringan komputer, saya juga mempelajari
+                    pengembangan website, database, sistem operasi,
+                    hardware komputer, serta berbagai teknologi
+                    pendukung lainnya.
+                </p>
+
+                <p>
+                    Saya percaya bahwa kemampuan teknologi tidak
+                    cukup hanya dipahami secara teori. Pengalaman
+                    praktik, pemecahan masalah, dan kemampuan
+                    bekerja sama merupakan bagian penting dalam
+                    proses belajar.
+                </p>
+
+            </div>
+
+
+            <div class="info-list reveal">
+
+                <div class="info-item">
+                    <strong>Nama</strong>
+                    <span>Akbar Muzaki</span>
+                </div>
+
+                <div class="info-item">
+                    <strong>Lahir</strong>
+                    <span>Payakumbuh, 13 April 2000</span>
+                </div>
+
+                <div class="info-item">
+                    <strong>Profesi</strong>
+                    <span>Guru TJKT</span>
+                </div>
+
+                <div class="info-item">
+                    <strong>Bidang</strong>
+                    <span>Networking & Information Technology</span>
+                </div>
+
+                <div class="info-item">
+                    <strong>Bahasa</strong>
+                    <span>Indonesia</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SKILLS
+========================================================= -->
+
+<section class="skills" id="skills">
+
+    <div class="container">
+
+        <div class="section-head reveal">
+
+            <div class="section-label">
+                Keahlian
+            </div>
+
+            <h2>
+                Hal yang saya kerjakan.
+            </h2>
+
+            <p>
+                Beberapa bidang teknologi yang menjadi fokus
+                pembelajaran dan pengembangan saya.
+            </p>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+            <div class="skill-card reveal">
+                <div class="skill-number">01</div>
+                <h3>Computer Networking</h3>
+                <p>
+                    TCP/IP, LAN, WAN, subnetting, routing,
+                    switching, dan troubleshooting jaringan.
+                </p>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-number">02</div>
+                <h3>MikroTik</h3>
+                <p>
+                    Konfigurasi router, DHCP, NAT, firewall,
+                    hotspot, dan manajemen jaringan.
+                </p>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-number">03</div>
+                <h3>Cisco</h3>
+                <p>
+                    Dasar konfigurasi perangkat Cisco,
+                    VLAN, routing dan simulasi jaringan.
+                </p>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-number">04</div>
+                <h3>Web Development</h3>
+                <p>
+                    HTML, CSS, JavaScript, PHP dan pembuatan
+                    website sederhana.
+                </p>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-number">05</div>
+                <h3>Database</h3>
+                <p>
+                    MySQL, perancangan tabel, relasi data,
+                    query dan pengelolaan database.
+                </p>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-number">06</div>
+                <h3>Hardware & IT Support</h3>
+                <p>
+                    Instalasi komputer, troubleshooting hardware,
+                    sistem operasi dan dukungan pengguna.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     EXPERIENCE
+========================================================= -->
+
+<section class="experience" id="experience">
+
+    <div class="container">
+
+        <div class="section-head reveal">
+
+            <div class="section-label">
+                Pengalaman
+            </div>
+
+            <h2>
+                Perjalanan profesional.
+            </h2>
+
+            <p>
+                Pengalaman saya dalam pendidikan dan bidang
+                teknologi informasi.
+            </p>
+
+        </div>
+
+
+        <div class="timeline">
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-date">
+                    PENDIDIKAN
+                </div>
+
+                <h3>
+                    Teknik Jaringan Komputer dan Telekomunikasi
+                </h3>
+
+                <h4>
+                    Bidang Keahlian
+                </h4>
+
+                <p>
+                    Mendalami teknologi jaringan komputer,
+                    perangkat jaringan, sistem komputer,
+                    administrasi jaringan dan teknologi informasi.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-date">
+                    PROFESIONAL
+                </div>
+
+                <h3>
+                    Guru TJKT
+                </h3>
+
+                <h4>
+                    Pendidikan Kejuruan
+                </h4>
+
+                <p>
+                    Mengajar materi jaringan komputer,
+                    perangkat jaringan, sistem komputer,
+                    troubleshooting dan teknologi informasi
+                    kepada siswa.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-date">
+                    PENGEMBANGAN
+                </div>
+
+                <h3>
+                    Pengembangan Media Pembelajaran
+                </h3>
+
+                <h4>
+                    Digital Education
+                </h4>
+
+                <p>
+                    Mengembangkan media dan sistem berbasis web
+                    untuk membantu proses pembelajaran dan
+                    pengelolaan informasi sekolah.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROJECTS
+========================================================= -->
+
+<section class="projects" id="projects">
+
+    <div class="container">
+
+        <div class="section-head reveal">
+
+            <div class="section-label">
+                Proyek
+            </div>
+
+            <h2>
+                Beberapa hal yang saya bangun.
+            </h2>
+
+            <p>
+                Proyek berikut menggambarkan penerapan teknologi
+                dalam pekerjaan dan pembelajaran.
+            </p>
+
+        </div>
+
+
+        <div class="project-grid">
+
+            <div class="project-card reveal">
+
+                <div class="project-top"></div>
+
+                <div class="project-content">
+
+                    <h3>
+                        Portal Kelas
+                    </h3>
+
+                    <p>
+                        Website informasi kelas yang digunakan
+                        untuk menampilkan data siswa, informasi
+                        kelas dan berbagai fitur pendukung
+                        pembelajaran.
+                    </p>
+
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-card reveal">
+
+                <div class="project-top"></div>
+
+                <div class="project-content">
+
+                    <h3>
+                        Sistem Data Siswa
+                    </h3>
+
+                    <p>
+                        Sistem sederhana untuk mengelola dan
+                        menampilkan data siswa secara terstruktur
+                        melalui website.
+                    </p>
+
+                    <div class="tags">
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">CRUD</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-card reveal">
+
+                <div class="project-top"></div>
+
+                <div class="project-content">
+
+                    <h3>
+                        Website Portfolio
+                    </h3>
+
+                    <p>
+                        Website pribadi untuk memperkenalkan
+                        profil, kemampuan, pengalaman dan proyek
+                        di bidang teknologi.
+                    </p>
+
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-card reveal">
+
+                <div class="project-top"></div>
+
+                <div class="project-content">
+
+                    <h3>
+                        Praktik Jaringan
+                    </h3>
+
+                    <p>
+                        Kegiatan praktik konfigurasi jaringan
+                        menggunakan perangkat router, switch,
+                        access point dan komputer.
+                    </p>
+
+                    <div class="tags">
+                        <span class="tag">MikroTik</span>
+                        <span class="tag">Cisco</span>
+                        <span class="tag">TCP/IP</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     VALUES
+========================================================= -->
+
+<section class="values">
+
+    <div class="container">
+
+        <div class="section-head reveal">
+
+            <div class="section-label">
+                Prinsip Kerja
+            </div>
+
+            <h2>
+                Cara saya bekerja dan belajar.
+            </h2>
+
+        </div>
+
+
+        <div class="values-grid">
+
+            <div class="value reveal">
+
+                <h3>
+                    Praktik
+                </h3>
+
+                <p>
+                    Mengutamakan praktik dan pengalaman langsung
+                    agar konsep teknologi lebih mudah dipahami.
+                </p>
+
+            </div>
+
+
+            <div class="value reveal">
+
+                <h3>
+                    Problem Solving
+                </h3>
+
+                <p>
+                    Terbiasa melakukan analisis masalah dan mencari
+                    solusi secara sistematis.
+                </p>
+
+            </div>
+
+
+            <div class="value reveal">
+
+                <h3>
+                    Berbagi
+                </h3>
+
+                <p>
+                    Berbagi pengetahuan dan membantu siswa
+                    berkembang sesuai kemampuan masing-masing.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="section-head reveal">
+
+            <div class="section-label">
+                Kontak
+            </div>
+
+            <h2>
+                Mari terhubung.
+            </h2>
+
+            <p>
+                Untuk diskusi, kerja sama, atau sekadar ingin
+                mengenal lebih jauh, Anda dapat menghubungi saya
+                melalui kontak berikut.
+            </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+            <div class="contact-list reveal">
+
+                <div class="contact-item">
+
+                    <small>Email</small>
+
+                    <a href="mailto:akbarmuzaki52@gmail.com">
+                        akbarmuzaki52@gmail.com
+                    </a>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <small>GitHub</small>
+
+                    <a
+                        href="https://github.com/akbarmuzakii/"
+                        target="_blank"
+                        rel="noopener">
+                        github.com/akbarmuzakii
+                    </a>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <small>WhatsApp</small>
+
+                    <a
+                        href="https://wa.me/6281275931718"
+                        target="_blank"
+                        rel="noopener">
+                        0812-7593-1718
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-note reveal">
+
+                <p>
+                    Saya terbuka untuk berdiskusi mengenai
+                    teknologi jaringan, pendidikan, pengembangan
+                    website, maupun proyek teknologi lainnya.
+                </p>
+
+                <br>
+
+                <p>
+                    Jika ingin menghubungi saya melalui WhatsApp,
+                    klik nomor WhatsApp di sebelah kiri.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="container">
+
+        © <span id="year"></span> Akbar Muzaki.
+        Dibuat dengan HTML, CSS & JavaScript.
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+    /* ================================
+       MOBILE MENU
+    ================================= */
+
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
+
+    menuBtn.addEventListener("click", function () {
+
+        navLinks.classList.toggle("active");
+
+    });
+
+
+    /* ================================
+       CLOSE MENU AFTER CLICK
+    ================================= */
+
+    document.querySelectorAll(".nav-links a").forEach(function(link) {
+
+        link.addEventListener("click", function() {
+
+            navLinks.classList.remove("active");
+
+        });
+
+    });
+
+
+    /* ================================
+       REVEAL ON SCROLL
+    ================================= */
+
+    const revealElements = document.querySelectorAll(".reveal");
+
+    const observer = new IntersectionObserver(function(entries) {
+
+        entries.forEach(function(entry) {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("show");
+
+                observer.unobserve(entry.target);
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.12
+    });
+
+
+    revealElements.forEach(function(element) {
+
+        observer.observe(element);
+
+    });
+
+
+    /* ================================
+       CURRENT YEAR
+    ================================= */
+
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+
+    /* ================================
+       ESC KEY CLOSE MENU
+    ================================= */
+
+    document.addEventListener("keydown", function(event) {
+
+        if (event.key === "Escape") {
+
+            navLinks.classList.remove("active");
+
+        }
+
+    });
+
+</script>
+
+</body>
+</html>
+```
+
+[/writing]
+
+### Struktur akhirnya
+
+Cukup **1 file**:
+
+```text
+portfolio/
+└── index.html
+```
+
+Tidak perlu lagi:
+
+```text
+style.css
+script.js
+```
+
+### Untuk memasukkan foto Anda
+
+Di bagian ini:
+
+```html
+<div class="photo-placeholder">
+    an foto Anda di sini
+</div>
+```
+
+ubah menjadi:
+
+```html
+<img src="akbar.jpg" alt="Akbar Muzaki">
+```
+
+Kemudian letakkan foto di folder yang sama:
+
+```text
+portfolio/
+├── index.html
+└── foto-akbar.jpg
+```
+
+Kalau nama fotonya misalnya `akbar-muzaki.png`, tinggal ubah menjadi:
+
+```html
+<img src="akbar.jpg" alt="Akbar Muzaki">
+```
+
+**Catatan:** versi ini sengaja saya buat lebih sederhana dan profesional—tanpa `@import Google Fonts`, tanpa efek neon berlebihan, tanpa kartu yang terlalu ramai, dan tanpa istilah/template yang terasa generik.
+Masukk
